@@ -9,7 +9,7 @@ Welcome to the repository on which we'll try to build the SPSS-ASEP.
 
 The purpose of this society will be to represent the Swiss Physic's Students (SPS <- to change because obvious conflict with the [SPS](https://www.sps.ch/en/sps)) nationally and internationally, and to become part of [IAPS](https://www.iaps.info/) and to go to their events. To promove and do cool things for physics in switzerland.
 
-We will do it in english as main and hopefully we'll have a team of translators for the other french german and italian.
+We will do it in english as main and hopefully we'll have a team of translators for french german and italian.
 
 We will organize an event in Geneva to create all of this (Hopefully before september 2023 so that we can go to [ICPS](https://www.icps2023.com/) in phillipines!!!). Therefore we need to (decreasing importance):
 
