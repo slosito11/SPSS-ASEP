@@ -31,4 +31,4 @@ This project is sustained by the followings (Student's associations and on same 
 
 
 
-Created by Stefano Losito
+Created by Stefano Losito (alias [Skeylos](github.com/SkeyloS))
