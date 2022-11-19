@@ -11,6 +11,8 @@ The purpose of this society will be to represent the Swiss Physic's Students (SP
 
 We will do it in english as main and hopefully we'll have a team of translators for french german and italian.
 
+All official document will be written with LaTeX, ALL of them.
+
 We will organize an event in Geneva to create all of this (Hopefully before september 2023 so that we can go to [ICPS](https://www.icps2023.com/) in phillipines!!!). Therefore we need to (decreasing importance):
 
 - [ ] [Create statute](https://github.com/slosito11/ASEP/issues/1) -> ongoing
