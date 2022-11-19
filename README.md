@@ -13,7 +13,7 @@ We will do it in english as main and hopefully we'll have a team of translators 
 
 We will organize an event in Geneva to create all of this (Hopefully before september 2023 so that we can go to [ICPS](https://www.icps2023.com/) in phillipines!!!). Therefore we need to (decreasing importance):
 
-- [ ] Create statute #1
+- [ ] [Create statute](https://github.com/slosito11/ASEP/issues/1) -> ongoing
 - [ ] Contact all swiss physic's student associations, start with contacting the ones from [this](https://www.swissuniversities.ch/en/organisation/members)
 - [ ] Ask [SPS](https://www.sps.ch/en/sps) to help us and create a relationship with them
 - [ ] Create our website and host it somewhere
