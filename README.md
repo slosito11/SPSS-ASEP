@@ -29,7 +29,7 @@ We will organize an event in Geneva to create all of this (Hopefully before sept
 
 This project is sustained by the followings (Student's associations and on same line the university, other associations and so on that support the project through them):
 
--AEP
+-AEP <- UNIGE (+ AESc)
 
 
 
