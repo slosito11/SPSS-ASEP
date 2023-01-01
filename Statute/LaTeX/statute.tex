@@ -1,0 +1,266 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% This is a simple template for a LaTeX document using the "article" class.
+% See "book", "report", "letter" for other types of document.
+
+\documentclass[11pt]{article} % use larger type; default would be 10pt
+
+%\usepackage{etex}
+
+\usepackage[utf8,cp1252]{inputenc} % set input encoding (not needed with XeLaTeX)
+\usepackage[english]{babel}
+
+%%% Examples of Article customizations
+% These packages are optional, depending whether you want the features they provide.
+% See the LaTeX Companion or other references for full information.
+
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % to change the page dimensions
+\geometry{a4paper} % or letterpaper (US) or a5paper or....
+% \geometry{margin=2in} % for example, change the margins to 2 inches all round
+% \geometry{landscape} % set up the page for landscape
+%   read geometry.pdf for detailed page layout information
+
+\usepackage{multicol}
+
+\usepackage{graphicx,float} % support the \includegraphics command and options
+\usepackage{caption}
+\usepackage{subcaption}
+% \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+
+%%% PACKAGES
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+%\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+% These packages are all incorporated in the memoir class to one degree or another...
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\renewcommand{\footrulewidth}{1pt} % customise the layout...
+%\lhead{}\chead{}\rhead{}
+%\lfoot{}\cfoot{\thepage}\rfoot{}
+\setlength{\headheight}{14pt}
+
+
+%%% SECTION TITLE APPEARANCE
+\usepackage[immediate]{silence}
+\WarningFilter[temp]{latex}{Command} % silence the warning
+\usepackage{sectsty}
+\DeactivateWarningFilters[temp] % So nothing unrelated gets silenced
+\allsectionsfont{\mdseries} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+
+%%% ToC (table of contents) APPEARANCE
+\usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
+\usepackage[titles]{tocloft} % Alter the style of the Table of Contents
+\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
+\setcounter{lofdepth}{2}
+
+\usepackage{titlesec}
+
+\titleformat{\section}[hang]
+{\normalfont}
+{Art. \thesection :}
+{1em}
+{}[]
+
+\let\Oldsection\section
+\renewcommand{\section}[1]{\leftskip 0pt \Oldsection{#1}}
+
+
+
+\renewcommand{\thesubsection}{\arabic{subsection}}
+\titleformat{\subsection}[runin]
+{\normalfont}
+{\footnotemark[\thesubsection]}
+{1em}
+{}[]
+\let\Oldsubsection\subsection
+\renewcommand{\subsection}[1]{\leftskip \parindent \Oldsubsection{#1}}
+
+
+
+\renewcommand{\thesubsubsection}{\alph{subsubsection}}
+\titleformat{\subsubsection}[runin]
+{\normalfont}
+{\big(\thesubsubsection\big)}
+{1em}
+{}[]
+\let\Oldsubsubsection\subsubsection
+\renewcommand{\subsubsection}[1]{\leftskip 2\parindent \Oldsubsubsection{#1}}
+
+
+
+
+
+
+%%%packages aggiunti da Stefano Losito
+\usepackage[
+style=phys,backend=biber,%
+articletitle=false,biblabel=brackets,%
+chaptertitle=false,pageranges=false%
+]
+{biblatex}
+\addbibresource{biblio.bib}
+
+
+
+\usepackage{amssymb}  
+\usepackage{xcolor, soul}
+\newcommand{\hlc}[2][yellow]{ {\sethlcolor{#1} \hl{#2}} }
+
+
+\DeclareCaptionFont{lightgray}{\color{lightgray}}
+\captionsetup{format=hang,justification={justified},labelfont={color=black,footnotesize},textfont={color=black,footnotesize},list=true}
+%\captionsetup[sub]{list=true}
+
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage{scalerel}
+\usepackage{ upgreek }
+\usepackage{mathtools}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{cleveref}
+\usepackage{enumitem}
+\usepackage{enotez}
+\usepackage{tikz} 
+\usepackage{pgfplots}
+\usepackage{ gensymb }
+\pgfplotsset{compat=1.11}
+
+\usepackage{mfirstuc}
+\usepackage[acronym,nomain]{glossaries}
+
+
+\usepackage{titling}
+\usepackage{appendix}
+\usepackage{placeins}
+\usepackage{lastpage}
+%\usepackage[english]{isodate}
+\usepackage[en-GB]{datetime2}
+\usepackage[final]{pdfpages}
+\usepackage{color}
+\usepackage{csquotes}
+
+%\usepackage{suffix}
+%\usepackage{acronym}
+
+\usepackage{fourier}
+\usepackage{arcs}
+\usepackage{tipa}
+%\usepackage{mathabx}
+%\usepackage{mathtools}  
+%\mathtoolsset{showonlyrefs} 
+
+%\usepackage[scaled]{helvet}
+%\renewcommand\familydefault{\sfdefault} 
+\usepackage[T1]{fontenc}
+\usepackage{MnSymbol}
+
+\pdfinclusionerrorlevel=1
+\pdfminorversion=7
+\pdfsuppresswarningpagegroup=1
+
+
+\renewcommand{\labelitemi}{--}
+\newcommand{\ac}[1]{\acrshort{#1}}
+
+
+\newcommand{\autori}{Losito Stefano}
+
+%\makenoidxglossaries
+
+
+\hypersetup{
+	colorlinks=false,
+	filecolor=magenta,
+	urlcolor=blue,
+	pdfauthor={\autori},
+ 	pdftitle={SPSS-AESP},
+ 	pdfkeywords={},
+ 	pdfsubject={SPSS-AESP},
+ 	pdfcreator={\autori},
+ 	pdflang={English},
+}
+\urlstyle{same}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\lfoot{}
+\rhead{Switzerland}
+\chead{SPSS-AESP}
+\cfoot{Page \thepage \hspace{1pt} of \hspace{1pt}\pageref{last page}}
+\rfoot{\today}
+\lhead{\autori}
+
+%\bibliographystyle{unsrt}
+%%% END Article customizations
+
+
+
+%%% The "real" document content comes below...
+
+\title{SPSS-AESP}
+\author{\autori}
+\date{\today}
+
+%\date{} % Activate to display a given date or no date (if empty),
+% otherwise the current date is printed 
+
+
+
+\begin{document}
+	\maketitle
+	%
+	%\pagenumbering{gobble}
+	%\newpage
+	%\pagenumbering{arabic}
+%\tableofcontents
+\pagebreak
+
+
+\section{OBJECT}
+
+\subsection{} 
+
+prova prova questo sarebbe un testo molto lungo che tenta di fare un salto di linea per ragioni boh...
+
+\subsubsection{} 
+
+prove prove pure questa linea ha scopo di essere lunga per fare il salto di linea per capier come ha fatto il coso....
+
+
+
+
+%\nocite{*}
+%\listoftables
+%\printendnotes
+%\printbibliography[heading=bibintoc]
+%\printnoidxglossaries
+%\listoffigures
+
+
+\label{last page}
+
+
+
+%\pagebreak
+%\newpage
+%
+%%\rfoot{}
+%\cfoot{\thepage/\pageref{LastPage}}
+%%\lfoot{}
+%\pagenumbering{roman}
+%
+%\begin{appendices}
+%
+%\end{appendices}
+
+\end{document}
